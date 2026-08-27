@@ -20,6 +20,7 @@
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-latin.woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/shop.css">
 
 
 <script type="application/ld+json">
@@ -733,262 +734,27 @@ body,.rv,.in .rv,.band{opacity:1!important;transform:none!important}
 <section class="sect reveal" aria-labelledby="inv-h">
   <div class="wrap">
     <h2 id="inv-h" class="sr-only">Remorques disponibles</h2>
-    <div class="filters" role="group" aria-label="Filtrer par catégorie">
-      <button class="chip" type="button" data-filter="all" aria-pressed="true">Tout voir</button>
-      <button class="chip" type="button" data-filter="cargo" aria-pressed="false">Cargo fermée <span aria-hidden="true">(7)</span></button>
-      <button class="chip" type="button" data-filter="plateforme" aria-pressed="false">Plateforme <span aria-hidden="true">(3)</span></button>
-      <button class="chip" type="button" data-filter="dompeur" aria-pressed="false">Dompeur <span aria-hidden="true">(4)</span></button>
-      <button class="chip" type="button" data-filter="goose" aria-pressed="false">Col de cygne <span aria-hidden="true">(1)</span></button>
-      <button class="chip" type="button" data-filter="utilitaire" aria-pressed="false">Utilitaire / VTT <span aria-hidden="true">(3)</span></button>
-      <button class="chip" type="button" data-filter="landscape" aria-pressed="false">Landscape <span aria-hidden="true">(2)</span></button>
-      <button class="chip" type="button" data-filter="tilt" aria-pressed="false">Tilt <span aria-hidden="true">(1)</span></button>
-      <button class="chip" type="button" data-filter="equipement" aria-pressed="false">Voiture / équipement <span aria-hidden="true">(2)</span></button>
-    </div>
     <div class="inv-bar">
       <p class="inv-count" aria-live="polite"><b id="inv-n">23</b> remorques affichées</p>
       <label class="sorter">Trier
         <select id="inv-sort">
-          <option value="cat">Par catégorie</option>
+          <option value="pertinence">Par catégorie</option>
           <option value="asc">Prix, du plus bas</option>
           <option value="desc">Prix, du plus haut</option>
-          <option value="year">Année, la plus récente</option>
+          <option value="annee">Année, la plus récente</option>
         </select>
       </label>
     </div>
-    <div class="inv-grid" id="inv-grid">
-    <a class="veh rv" href="contact.html" data-cat="cargo" data-price="18999" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Cargo fermée</span></span>
-        <picture><source srcset="assets/inv/inv-03.webp" type="image/webp"><img src="assets/inv/inv-03.jpg" alt="2026 Edge SC8.5X18, cargo fermée" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>Edge</h3>
-        <span class="model">SC8.5X18</span>
-        <span class="foot"><span class="price">18 999&nbsp;$</span><span class="see">Informez-vous</span></span>
+    <div class="shop">
+      <div>
+        <button type="button" class="facets-bascule" id="facets-bascule" aria-expanded="false" aria-controls="facets">
+          Filtrer l'inventaire
+        </button>
+        <aside class="facets" id="facets" aria-label="Filtres"></aside>
       </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="cargo" data-price="18999" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Cargo fermée</span></span>
-        <picture><source srcset="assets/inv/inv-04.webp" type="image/webp"><img src="assets/inv/inv-04.jpg" alt="2026 Edge SC8.5X18, cargo fermée" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>Edge</h3>
-        <span class="model">SC8.5X18</span>
-        <span class="foot"><span class="price">18 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="cargo" data-price="10499" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Cargo fermée</span></span>
-        <picture><source srcset="assets/inv/inv-17.webp" type="image/webp"><img src="assets/inv/inv-17.jpg" alt="2026 Xcel X716HCTW + 6&#x27;&#x27;, cargo fermée" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>Xcel</h3>
-        <span class="model">X716HCTW + 6&#x27;&#x27;</span>
-        <span class="foot"><span class="price">10 499&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="cargo" data-price="9999" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Cargo fermée</span></span>
-        <picture><source srcset="assets/inv/inv-16.webp" type="image/webp"><img src="assets/inv/inv-16.jpg" alt="2026 Xcel X710HCSW, cargo fermée" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>Xcel</h3>
-        <span class="model">X710HCSW</span>
-        <span class="foot"><span class="price">9 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="cargo" data-price="0" data-year="2027">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Cargo fermée</span></span>
-        <picture><source srcset="assets/inv/inv-00.webp" type="image/webp"><img src="assets/inv/inv-00.jpg" alt="2027 Ideal Cargo EV716TA2SZ, cargo fermée" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2027</span>
-        <h3>Ideal</h3>
-        <span class="model">Cargo EV716TA2SZ</span>
-        <span class="foot"><span class="price ask">Prix sur demande</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="cargo" data-price="0" data-year="2027">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Cargo fermée</span></span>
-        <picture><source srcset="assets/inv/inv-01.webp" type="image/webp"><img src="assets/inv/inv-01.jpg" alt="2027 Ideal Cargo EV8516TA3SZ, cargo fermée" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2027</span>
-        <h3>Ideal</h3>
-        <span class="model">Cargo EV8516TA3SZ</span>
-        <span class="foot"><span class="price ask">Prix sur demande</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="cargo" data-price="0" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Cargo fermée</span></span>
-        <picture><source srcset="assets/inv/inv-02.webp" type="image/webp"><img src="assets/inv/inv-02.jpg" alt="2026 Ideal Cargo EV7514TA2SZ, cargo fermée" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>Ideal</h3>
-        <span class="model">Cargo EV7514TA2SZ</span>
-        <span class="foot"><span class="price ask">Prix sur demande</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="plateforme" data-price="13999" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Plateforme</span></span>
-        <picture><source srcset="assets/inv/inv-07.webp" type="image/webp"><img src="assets/inv/inv-07.jpg" alt="2026 K-Trail DKO20+3-14-RD, plateforme" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>K-Trail</h3>
-        <span class="model">DKO20+3-14-RD</span>
-        <span class="foot"><span class="price">13 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="plateforme" data-price="12999" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Plateforme</span></span>
-        <picture><source srcset="assets/inv/inv-08.webp" type="image/webp"><img src="assets/inv/inv-08.jpg" alt="2026 K-Trail DKO20-16, plateforme" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>K-Trail</h3>
-        <span class="model">DKO20-16</span>
-        <span class="foot"><span class="price">12 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="plateforme" data-price="7499" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Plateforme</span></span>
-        <picture><source srcset="assets/inv/inv-10.webp" type="image/webp"><img src="assets/inv/inv-10.jpg" alt="2026 K-Trail DGE16-10, plateforme" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>K-Trail</h3>
-        <span class="model">DGE16-10</span>
-        <span class="foot"><span class="price">7 499&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="dompeur" data-price="20999" data-year="2024">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Dompeur</span></span>
-        <picture><source srcset="assets/inv/inv-13.webp" type="image/webp"><img src="assets/inv/inv-13.jpg" alt="2024 K-Trail DGON821614PS, dompeur" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2024</span>
-        <h3>K-Trail</h3>
-        <span class="model">DGON821614PS</span>
-        <span class="foot"><span class="price">20 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="dompeur" data-price="11799" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Dompeur</span></span>
-        <picture><source srcset="assets/inv/inv-11.webp" type="image/webp"><img src="assets/inv/inv-11.jpg" alt="2026 Maxi-Roule DT72120TA3, dompeur" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>Maxi-Roule</h3>
-        <span class="model">DT72120TA3</span>
-        <span class="foot"><span class="price">11 799&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="dompeur" data-price="11495" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Dompeur</span></span>
-        <picture><source srcset="assets/inv/inv-09.webp" type="image/webp"><img src="assets/inv/inv-09.jpg" alt="2026 K-Trail D610-10PS, dompeur" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>K-Trail</h3>
-        <span class="model">D610-10PS</span>
-        <span class="foot"><span class="price">11 495&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="dompeur" data-price="10499" data-year="2027">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Dompeur</span></span>
-        <picture><source srcset="assets/inv/inv-12.webp" type="image/webp"><img src="assets/inv/inv-12.jpg" alt="2027 Maxi-Roule DT60120-TA3-LT, dompeur" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2027</span>
-        <h3>Maxi-Roule</h3>
-        <span class="model">DT60120-TA3-LT</span>
-        <span class="foot"><span class="price">10 499&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="goose" data-price="23999" data-year="2025">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Col de cygne</span></span>
-        <picture><source srcset="assets/inv/inv-14.webp" type="image/webp"><img src="assets/inv/inv-14.jpg" alt="2025 K-Trail DGON821616, col de cygne" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2025</span>
-        <h3>K-Trail</h3>
-        <span class="model">DGON821616</span>
-        <span class="foot"><span class="price">23 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="utilitaire" data-price="3899" data-year="2027">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Utilitaire / VTT</span></span>
-        <picture><source srcset="assets/inv/inv-05.webp" type="image/webp"><img src="assets/inv/inv-05.jpg" alt="2027 Maxi-Roule UTO66123-D, utilitaire / vtt" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2027</span>
-        <h3>Maxi-Roule</h3>
-        <span class="model">UTO66123-D</span>
-        <span class="foot"><span class="price">3 899&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="utilitaire" data-price="3299" data-year="2027">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Utilitaire / VTT</span></span>
-        <picture><source srcset="assets/inv/inv-06.webp" type="image/webp"><img src="assets/inv/inv-06.jpg" alt="2027 Maxi-Roule UTO66123-S, utilitaire / vtt" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2027</span>
-        <h3>Maxi-Roule</h3>
-        <span class="model">UTO66123-S</span>
-        <span class="foot"><span class="price">3 299&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="utilitaire" data-price="2595" data-year="2024">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Utilitaire / VTT</span></span>
-        <picture><source srcset="assets/inv/inv-20.webp" type="image/webp"><img src="assets/inv/inv-20.jpg" alt="2024 Maxxa MXR45, utilitaire / vtt" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2024</span>
-        <h3>Maxxa</h3>
-        <span class="model">MXR45</span>
-        <span class="foot"><span class="price">2 595&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="landscape" data-price="8999" data-year="2024">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Landscape</span></span>
-        <picture><source srcset="assets/inv/inv-22.webp" type="image/webp"><img src="assets/inv/inv-22.jpg" alt="2024 Maxi-Roule LS80192TA2R6032, landscape" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2024</span>
-        <h3>Maxi-Roule</h3>
-        <span class="model">LS80192TA2R6032</span>
-        <span class="foot"><span class="price">8 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="landscape" data-price="8499" data-year="2023">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Landscape</span></span>
-        <picture><source srcset="assets/inv/inv-21.webp" type="image/webp"><img src="assets/inv/inv-21.jpg" alt="2023 Maxi-Roule LS80216TA2R6019, landscape" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2023</span>
-        <h3>Maxi-Roule</h3>
-        <span class="model">LS80216TA2R6019</span>
-        <span class="foot"><span class="price">8 499&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="tilt" data-price="18499" data-year="2025">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Tilt</span></span>
-        <picture><source srcset="assets/inv/inv-19.webp" type="image/webp"><img src="assets/inv/inv-19.jpg" alt="2025 Weberlane WL2400TLDO, tilt" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2025</span>
-        <h3>Weberlane</h3>
-        <span class="model">WL2400TLDO</span>
-        <span class="foot"><span class="price">18 499&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="equipement" data-price="36765" data-year="2026">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Voiture / équipement</span></span>
-        <picture><source srcset="assets/inv/inv-15.webp" type="image/webp"><img src="assets/inv/inv-15.jpg" alt="2026 Metavic WD714, voiture / équipement" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2026</span>
-        <h3>Metavic</h3>
-        <span class="model">WD714</span>
-        <span class="foot"><span class="price">36 765&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
-    <a class="veh rv" href="contact.html" data-cat="equipement" data-price="8999" data-year="2025">
-      <div class="ph"><span class="tag badge" aria-hidden="true"><span>Voiture / équipement</span></span>
-        <picture><source srcset="assets/inv/inv-18.webp" type="image/webp"><img src="assets/inv/inv-18.jpg" alt="2025 Weberlane AWL2000A, voiture / équipement" loading="lazy" decoding="async" width="900" height="675"></picture></div>
-      <div class="body">
-        <span class="yr">2025</span>
-        <h3>Weberlane</h3>
-        <span class="model">AWL2000A</span>
-        <span class="foot"><span class="price">8 999&nbsp;$</span><span class="see">Informez-vous</span></span>
-      </div>
-    </a>
+      <div class="inv-grid" id="inv-grid"></div>
     </div>
-    <p class="inv-empty" id="inv-empty" hidden>Rien dans cette catégorie pour le moment. Appelle-nous au 1 877 939-9494, on a souvent plus en cour que sur le site.</p>
-    <p class="inv-note">Les prix affichés sont ceux de la fiche du modèle, avant taxes, transport et préparation. L'inventaire bouge vite: confirme la disponibilité avant de te déplacer.</p>
+    <p class="inv-note">Les prix affichés sont ceux de la fiche du modèle, avant taxes, transport et droits de la SAAQ. L'inventaire bouge vite: la réservation en ligne immobilise l'unité à ton nom pour 500&nbsp;$, remboursables sept jours.</p>
   </div>
 </section>
 </main>
@@ -1057,49 +823,8 @@ body,.rv,.in .rv,.band{opacity:1!important;transform:none!important}
 <div class="cur-ring" aria-hidden="true"></div>
 <div class="cur-dot" aria-hidden="true"></div>
 <script src="assets/site.js" defer></script>
-<script>
-(function(){
-  var grid=document.getElementById('inv-grid');
-  if(!grid)return;
-  var cards=[].slice.call(grid.children);
-  var chips=[].slice.call(document.querySelectorAll('.chip'));
-  var count=document.getElementById('inv-n');
-  var empty=document.getElementById('inv-empty');
-  var sort=document.getElementById('inv-sort');
-  var filter='all';
-  function apply(){
-    var n=0;
-    cards.forEach(function(c){
-      var show=filter==='all'||c.getAttribute('data-cat')===filter;
-      c.classList.toggle('hide',!show);
-      if(show)n++;
-    });
-    count.textContent=n;
-    empty.hidden=n>0;
-    try{history.replaceState(null,'',filter==='all'?location.pathname:'#'+filter)}catch(_){}
-  }
-  chips.forEach(function(ch){
-    ch.addEventListener('click',function(){
-      filter=ch.getAttribute('data-filter');
-      chips.forEach(function(o){o.setAttribute('aria-pressed',String(o===ch))});
-      apply();
-    });
-  });
-  sort.addEventListener('change',function(){
-    var v=sort.value;
-    var arr=cards.slice();
-    if(v==='asc')arr.sort(function(a,b){return (+a.dataset.price||1e9)-(+b.dataset.price||1e9)});
-    else if(v==='desc')arr.sort(function(a,b){return (+b.dataset.price||0)-(+a.dataset.price||0)});
-    else if(v==='year')arr.sort(function(a,b){return (+b.dataset.year||0)-(+a.dataset.year||0)});
-    else arr=cards.slice();
-    arr.forEach(function(c){grid.appendChild(c)});
-  });
-  var h=location.hash.slice(1);
-  if(h){
-    var target=chips.filter(function(c){return c.getAttribute('data-filter')===h})[0];
-    if(target)target.click();
-  }
-})();
-</script>
+<script src="assets/data/catalogue.js"></script>
+<script src="assets/shop.js"></script>
+<script src="assets/boutique.js" defer></script>
 </body>
 </html>

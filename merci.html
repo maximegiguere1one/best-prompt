@@ -3,39 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page introuvable | Pro Remorque Québec</title>
-<meta name="description" content="La page demandée est introuvable. Retourne à l'accueil ou consulte l'inventaire de remorques Pro Remorque.">
+<title>Réservation confirmée | Pro Remorque Québec</title>
+<meta name="description" content="Votre réservation est enregistrée. Un conseiller Pro Remorque vous rappelle le jour ouvrable suivant.">
 <meta name="theme-color" content="#0e0b08">
 <!-- DEPLOY STEP: remplacer https://www.proremorque.com/ par l'URL live dans canonical + og:url + og:image -->
-<link rel="canonical" href="https://www.proremorque.com/404.html">
-<meta property="og:title" content="Page introuvable | Pro Remorque Québec">
-<meta property="og:description" content="La page demandée est introuvable. Retourne à l'accueil ou consulte l'inventaire de remorques Pro Remorque.">
+<link rel="canonical" href="https://www.proremorque.com/merci.html">
+<meta property="og:title" content="Réservation confirmée | Pro Remorque Québec">
+<meta property="og:description" content="Votre réservation est enregistrée. Un conseiller Pro Remorque vous rappelle le jour ouvrable suivant.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_CA">
 <meta property="og:site_name" content="Pro Remorque Québec">
-<meta property="og:url" content="https://www.proremorque.com/404.html">
-<meta property="og:image" content="https://www.proremorque.com/assets/hero-ending.jpg">
+<meta property="og:url" content="https://www.proremorque.com/merci.html">
+<meta property="og:image" content="https://www.proremorque.com/assets/atelier.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffffff'/%3E%3Cpath d='M10 30 q22 -20 44 -8 l0 8 z' fill='%23d7282f'/%3E%3Ccircle cx='32' cy='40' r='12' fill='%23151312'/%3E%3Ccircle cx='32' cy='40' r='5' fill='%23d7282f'/%3E%3C/svg%3E">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-latin.woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/shop.css">
-
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@id": "https://www.proremorque.com/#org",
-   "@type": "AutoDealer",
-   "name": "Pro Remorque Québec",
-   "url": "https://www.proremorque.com/"
-  }
- ]
-}
-</script>
+<meta name="robots" content="noindex">
 </head>
 <body>
 <noscript><style>
@@ -71,21 +57,24 @@ body,.rv,.in .rv,.band{opacity:1!important;transform:none!important}
     </ul>
     <a class="nav-tel" href="tel:+18779399494">1 877 939-9494</a>
   </div>
-</nav>
-<main id="main" tabindex="-1">
-<section class="err">
+</nav><main id="main" tabindex="-1">
+<section class="sect">
   <div class="wrap">
-    <p class="code" aria-hidden="true">404</p>
-    <h1>Cette page a pris <span class="hollow">le champ</span><span class="dot-red">.</span></h1>
-    <p>Elle a peut-être changé d'adresse, ou le lien s'est brisé en chemin. Rien de grave: on te ramène dans la cour.</p>
-    <div class="cta-row" style="display:flex;gap:1rem;flex-wrap:wrap">
-      <a class="btn btn-solid" href="index.html"><span>Retour à l'accueil</span></a>
-      <a class="btn btn-ghost" href="inventaire.html"><span>Voir l'inventaire</span></a>
+    <div class="merci">
+      <div class="merci-ico" aria-hidden="true">✓</div>
+      <h1>C’est réservé<span class="dot-red">.</span></h1>
+      <p id="merci-ligne">Votre remorque porte votre nom. On ne la montre plus à personne d’autre.</p>
+      <p class="merci-num">Réservation <b id="merci-num">—</b></p>
+      <ul class="merci-suite">
+        <li><span class="n">1</span><div><b>Un courriel de confirmation part maintenant</b><p>Il contient le détail de votre réservation et la succursale choisie. S’il n’arrive pas, vérifiez les indésirables.</p></div></li>
+        <li><span class="n">2</span><div><b>Un conseiller vous appelle</b><p>Le jour ouvrable suivant, pour convenir de la date de ramassage ou de livraison et régler le solde.</p></div></li>
+        <li><span class="n">3</span><div><b>Vous repartez avec</b><p>Attelage vérifié, freins testés, lumières branchées. On ne vous laisse pas partir avant que ça soit droit.</p></div></li>
+      </ul>
+      <p style="margin-top:2.5rem"><a class="btn btn-ghost" href="inventaire.html"><span>Retour à l’inventaire</span></a></p>
     </div>
   </div>
 </section>
 </main>
-
 <footer>
   <div class="foot-brand">
     <picture><source srcset="assets/logo.webp" type="image/webp"><img src="assets/logo.png" alt="" aria-hidden="true" width="640" height="320"></picture>
@@ -144,5 +133,6 @@ body,.rv,.in .rv,.band{opacity:1!important;transform:none!important}
 <script src="assets/site.js" defer></script>
 <script src="assets/data/catalogue.js"></script>
 <script src="assets/shop.js"></script>
+<script src="assets/merci.js" defer></script>
 </body>
 </html>
