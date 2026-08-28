@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "agence-one": {
+      "source": {
+        "source": "github",
+        "repo": "maximegiguere1one/claudeagent"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "agence-one@agence-one": true
+  }
+}
